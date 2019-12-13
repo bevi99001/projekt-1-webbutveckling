@@ -1,31 +1,33 @@
-<!DOCTYPE html> <!-- Säger till webbläsaren att detta är en html dokument -->
-<html lang="sv"> <!-- Webbsidan är på Svenska  -->
-    <head>
-        <meta charset="UTF-8"> <!--  -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Stänger av zoom för telefoner -->
+<!DOCTYPE html> <!--säger till hemsidan att det är html-->
+<html lang="sv"> <!--språk på sidan,svenska-->
+    <head> 
+        <meta charset="UTF-8"> <!--UTF-8 bokstäver-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Stänger av zoom för telefoner -->
         <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Anväder senaste rendereringsmotorn i Edge webbläsaren -->
-        <title>Antika datorer</title> <!-- Sätter titeln av sidan -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> <!-- Inkluderar jQuery -->
-        <link rel="stylesheet" href="css/global.css" type="text/css">  <!-- Länkar till extern CSS -->
-        <link href="https://media.istockphoto.com/vectors/vintage-personal-computer-icon-vector-sign-and-symbol-isolated-on-vector-id1025699006" rel="icon"> <!-- Sätter ikon på webbsidan -->
-    </head>
+        <title>Antika datorer</title> <!--Titel på sidan-->
 
-    <body>
-        <header>
-            <h1 class="fontroman">Artiklar</h1>
-            <nav class="app-nav">
-                <ul>
-                    <li><a href="index.html">Antika datorer</a></li>
-                    <li><a href="historia.html">Historia</a></li>
-                    <li class="active">Artiklar</li>
-                </ul>
-            </nav>
-        </header>        
-        <main class="app-main content">
-            <h2>Artiklar</h2>
-                
-            <div id="artiklar"></div>
-            <script src="artiklar.js"></script>
-        </main>
-    </body>
-</html>
+        <link rel="stylesheet" href="css/global.css" type="text/css"> <!--länkar till extern css-->
+        <link href="https://media.istockphoto.com/vectors/vintage-personal-computer-icon-vector-sign-and-symbol-isolated-on-vector-id1025699006" rel="icon"> <!--Icon på fliken-->
+    </head> <!--sluttag för head-->
+
+    <body> <!--starttagg för det som visas i sidan-->
+        <header> <!--Påbörjar huvudinnehåll-->
+            <h1 class="fontroman">Historia</h1> <!--Huvudtext 1-->
+            <nav class="app-nav"> <!--Start av navigationsmeny-->
+                <ul> <!--Början av navigationslistan-->
+                    <li><a href="index.html">Antika datorer</a></li> 
+                    <li class="active">Historia</li>
+                    <li><a href="artiklar.html">Artiklar</a></li>
+                </ul> <!--Slutet av navigationslistan-->
+            </nav> <!--Slutet av navigationsmeny-->
+        </header> <!--Avslutar huvudinnehåll-->
+
+        <main class="app-main content"> <!--Början av main body-->
+            <h2>Historia</h2> <!--Huvudtext 2-->
+            <a target="_blank" href="https://sv.wikipedia.org/wiki/Datorns_historia"><img class="pcpic" src="https://busswoman.files.wordpress.com/2015/05/desk-top-computer.png" alt="En antik dator"></a> <!--bild, länkar till en sida, öppnar sidan i en ny flik-->
+            <a target="_blank" href="https://sv.wikipedia.org/wiki/Datorns_historia"><img class="pcpicrev" src="https://busswoman.files.wordpress.com/2015/05/desk-top-computer.png" alt="En antik dator"></a> 
+            <p class="fontjeepers2">Datorns historia sträcker sig över den tid då människan konstruerat maskiner för att göra beräkningar och bearbeta data. Räknemaskiner har funnits i flera hundra år, men det var först på 1900-talet som de blev elektriska. Det vi kallar datorer omfattar egentligen många helt skilda koncept: dels utrustning avsedd att underlätta beräkningar (därav den engelska termen computer, som används på flera språk, resp. matematikmaskin), dels utrustning som hanterar stora mängder information, data, (därav det franska ordet ordinateur och svenska datamaskin, senare dator) och utrustning för att styra apparater med hjälp av logiska beslut (styrsystem).</p> <!--Text--> 
+            <p class="fontjeepers2">Beräkningar kan ske med analog dator som utför operationer på spänningar steglöst med hjälp av elektroniska komponenter, eller med digital dator, där ett tal representeras av en oftast decimal, hexadecimal, oktal eller binär kodning och beräkningen sker med diskreta spänningsnivåer som representerar siffervärden.</p>
+        </main>  <!--Slutet av main body-->
+    </body> <!--sluttag för det som visas i sidan-->
+</html> <!--sluttagg för sidan-->

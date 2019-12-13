@@ -1,0 +1,165 @@
+@font-face { 
+
+    font-family: 'roman_font';
+    src: url('../fonts/roman_font.ttf') format('truetype');
+}
+
+@font-face { 
+
+    font-family: 'jeepers'; /*font på texten*/
+    src: url('../fonts/jeepers.ttf') format('truetype'); /*importerar ttf (fonten)*/
+}
+
+
+body { 
+
+    background-image: url("../img/wallpaper.jpg"); /*Bakgrunds bild på hemsidan*/
+    font-family: Arial, Helvetica, sans-serif; /* Default font family*/
+}
+
+.app-nav li { 
+    font-size: 2em; /*storlek på texten*/
+    font-family: 'roman_font';  
+    color: black; /*Färg på texten*/
+    list-style-type: none; /*Ta bort punkter på listan*/
+
+    padding-top: 15px; /*Gör navigationsmenyn större på höjden*/
+    padding-bottom: 15px; /*Flyttar navigationsmenyn neråt så det blir mer mellanrum mellan texten*/
+
+    box-shadow: 0px 0px 22px 10px rgba(0,0,0,0.75); /*Skuggor på sidan av navigationsmenyn*/
+    text-align: center; /*Ändrar texten till mitten*/
+}
+
+.app-nav a { 
+    color: black;
+    text-decoration: none; /*Ta bort understräck*/
+}
+
+
+h1 { 
+    text-align: center;
+    display: block;
+    background-color: #FFF5C3; /*Bakgrundsfärg på huvudrubrik*/
+    color: black;
+    width: 48%; /**/
+    margin: 0 auto; /**/
+    padding: 25px 25px; /**/
+    margin-bottom: 50px; /**/
+}
+
+h2 { 
+    margin: 0;
+}
+
+.active { 
+    color: white !important;
+}
+
+.pictureleft { 
+    width: 25%;
+    height: auto; /**/
+    float: left; /**/
+}
+
+.pictureright { 
+    width: 25%;
+    height: auto;
+    float: right;
+}
+
+.pcpic { 
+    width: 25%;
+    height: auto;
+    float: right;
+}
+
+.pcpicrev { 
+    width: 25%;
+    height: auto;
+    float: left;
+    transform: scaleX(-1); /*Gör bilden åt motsatta håll*/
+}
+
+.app-nav ul { 
+    list-style-type: none;
+    padding: 0;
+    background-image: url("../img/wallpaper.jpg");
+}
+
+.app-nav { 
+    width: 50%;
+    height: auto;
+    display: block;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 22px 10px rgba(0,0,0,0.75);
+}
+
+.header { 
+    text-align: center;
+    font-size: 4em;
+    font-family: 'roman_font';
+    color: #FFF5C3;
+}
+
+.content {  
+    display: block;
+    width: 90%;
+    height: auto;
+    min-height: 400px;
+    padding: 25px 25px;
+    color: black;
+    background-color: #FFF5C3;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'jeepers';
+}
+
+.fontjeepers { 
+    font-family: 'jeepers';
+    text-align: center;
+    font-size: 1.25em;
+}
+
+.fontroman { 
+    font-family: 'roman_font';
+    text-align: center;
+}
+
+.fontjeepers2 { 
+    font-family: 'jeepers';
+    text-align: center;
+    font-size: 1.25em;
+    color: rgb(255, 68, 0);
+}
+
+article img {
+    width: 25%;
+    height: auto;
+}
+
+article p, h3 {
+    padding: 15px 15px;
+}
+
+article:nth-child(1) {
+    background-color:black; 
+    color:white; 
+}
+
+article:nth-child(2) {
+    background-color:#bebcb2; 
+    color:black; 
+    
+}
+
+article:nth-child(3) {
+    background-color:lightgrey; 
+    color: black; 
+    
+}
+
+

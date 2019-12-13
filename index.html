@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html lang="sv"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <title>Antika datorer</title> 
+
+        <link rel="stylesheet" href="css/global.css" type="text/css">
+        <link href="https://media.istockphoto.com/vectors/vintage-personal-computer-icon-vector-sign-and-symbol-isolated-on-vector-id1025699006" rel="icon">
+    </head>
+
+    <body>
+        <header>
+            <h1 class="fontroman">Antika Datorer</h1>
+            <nav class="app-nav">
+                <ul>
+                    <li class="active">Antika datorer</li>
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="artiklar.html">Artiklar</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="app-main content">
+            <h2>Välkommna till Antika Datorer!</h2>
+            <img alt="antika dator" class="pictureright" src="http://www.hypepotamus.com/wp-content/uploads/2015/04/computers-1038x691.jpg">
+            <img alt="antik dator" class="pictureleft" src="https://assets.newatlas.com/dims4/default/2a2904a/2147483647/strip/true/crop/1000x667+0+41/resize/1160x774!/quality/90/?url=https%3A%2F%2Fassets.newatlas.com%2Farchive%2Foldtimecomputer.jpg">
+            <p class="fontjeepers">På denna sidan kommer ni att få veta mer om Antika Datorers historia och lite mer specifikt om dem under artiklar. 
+            <br> Ni kommer t.ex få reda på vad en commodore 64 är för något och hur den ser ut. Ni kommer också få reda på Commodore SX-64 och Amiga.</p>
+            <img alt="bildspel" id="slideshow" class="slideshow" src="#">
+            <script>
+            let pictures = [
+                'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IBM_PC_5150.jpg/250px-IBM_PC_5150.jpg'
+                ,'http://www.vintagegames.se/mediawiki/images/thumb/d/d4/SX-64.jpg/300px-SX-64.jpg', 
+                'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Amiga500_system.jpg/350px-Amiga500_system.jpg', 
+                'https://www.nyteknik.se/ponIltIpIv-1512735935/tekniknyheter/i4xw26-a5f4fb80-e0cc-41f3-b821-e653a17b4632/alternates/FREE_320/a5f4fb80-e0cc-41f3-b821-e653a17b4632',
+                'https://www.99mac.se/static/artikel/bild/38356?l=eyJyZXNvdXJjZSI6Ilwvc3RhdGljXC9hcnRpa2VsXC9iaWxkXC8zODM1NiIsImZpbHRlcnMiOlsiYz0xNDEsNjAxLDIxNDAsMjM2OCIsInI9MCwwLDAsMSIsInQ9YXJ0aWNsZUZsb2F0Il0sInBhcmFtcyI6W10sImtleSI6ImJiYzFkMjJjZjk3ZTE0ODIxNjVhYTlhYTVkNjY0NmUzIn0%3D'];
+
+            let i = 0;
+
+            function changePicture()
+            {
+                document.getElementById('slideshow').src = pictures[i++];
+                if(i >= pictures.length) i = 0;
+            }
+
+            setInterval(changePicture, 5000);
+            changePicture();
+
+            </script>
+        </main>
+    </body>
+</html>
