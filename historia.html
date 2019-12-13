@@ -1,0 +1,31 @@
+<!DOCTYPE html> <!-- Säger till webbläsaren att detta är en html dokument -->
+<html lang="sv"> <!-- Webbsidan är på Svenska  -->
+    <head>
+        <meta charset="UTF-8"> <!--  -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Stänger av zoom för telefoner -->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Anväder senaste rendereringsmotorn i Edge webbläsaren -->
+        <title>Antika datorer</title> <!-- Sätter titeln av sidan -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> <!-- Inkluderar jQuery -->
+        <link rel="stylesheet" href="css/global.css" type="text/css">  <!-- Länkar till extern CSS -->
+        <link href="https://media.istockphoto.com/vectors/vintage-personal-computer-icon-vector-sign-and-symbol-isolated-on-vector-id1025699006" rel="icon"> <!-- Sätter ikon på webbsidan -->
+    </head>
+
+    <body>
+        <header>
+            <h1 class="fontroman">Artiklar</h1>
+            <nav class="app-nav">
+                <ul>
+                    <li><a href="index.html">Antika datorer</a></li>
+                    <li><a href="historia.html">Historia</a></li>
+                    <li class="active">Artiklar</li>
+                </ul>
+            </nav>
+        </header>        
+        <main class="app-main content">
+            <h2>Artiklar</h2>
+                
+            <div id="artiklar"></div>
+            <script src="artiklar.js"></script>
+        </main>
+    </body>
+</html>
