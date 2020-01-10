@@ -41,8 +41,8 @@ h1 {
     display: block;
     background-color: #FFF5C3; /*Bakgrundsfärg på huvudrubrik*/
     color: black;
-    width: 48%; /**/
-    margin: 0 auto; /**/
+    width: 48%; /*bredden på rubrik*/
+    margin: 0 auto; /*position på texten*/
     padding: 25px 25px; /**/
     margin-bottom: 50px; /**/
 }
@@ -57,8 +57,8 @@ h2 {
 
 .pictureleft { 
     width: 25%;
-    height: auto; /**/
-    float: left; /**/
+    height: auto; /*höjden på bilden*/
+    float: left; /*position på bilden*/
 }
 
 .pictureright { 
@@ -93,7 +93,7 @@ h2 {
     background-color: white;
     margin: 0 auto;
     border-radius: 5px;
-    box-shadow: 0px 0px 22px 10px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 22px 10px rgba(0,0,0,0.75); /*skugga på navigationsmenyn*/
 }
 
 .header { 
@@ -107,12 +107,12 @@ h2 {
     display: block;
     width: 90%;
     height: auto;
-    min-height: 400px;
+    min-height: 400px; /*Minsta höjden på rektanglen*/
     padding: 25px 25px;
     color: black;
     background-color: #FFF5C3;
     margin: 0 auto;
-    border-radius: 5px;
+    border-radius: 5px; /*runda hörn*/
     margin-top: 100px;
     text-align: center;
     font-family: 'jeepers';
