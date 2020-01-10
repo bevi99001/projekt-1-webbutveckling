@@ -27,27 +27,28 @@
             <img alt="antik dator" class="pictureleft" src="https://assets.newatlas.com/dims4/default/2a2904a/2147483647/strip/true/crop/1000x667+0+41/resize/1160x774!/quality/90/?url=https%3A%2F%2Fassets.newatlas.com%2Farchive%2Foldtimecomputer.jpg">
             <p class="fontjeepers">På denna sidan kommer ni att få veta mer om Antika Datorers historia och lite mer specifikt om dem under artiklar. 
             <br> Ni kommer t.ex få reda på vad en commodore 64 är för något och hur den ser ut. Ni kommer också få reda på Commodore SX-64 och Amiga.</p>
-            <img alt="bildspel" id="slideshow" class="slideshow" src="#">
-            <script>
-            let pictures = [
+            <img alt="bildspel" id="slideshow" class="slideshow" src="#"> <!--element som innehåller bilderna-->
+            <script> //lägger till script på hemsidan
+            let pictures = [ //bestämmer vilka bilder som ska visas
                 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IBM_PC_5150.jpg/250px-IBM_PC_5150.jpg'
                 ,'http://www.vintagegames.se/mediawiki/images/thumb/d/d4/SX-64.jpg/300px-SX-64.jpg', 
                 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Amiga500_system.jpg/350px-Amiga500_system.jpg', 
                 'https://www.nyteknik.se/ponIltIpIv-1512735935/tekniknyheter/i4xw26-a5f4fb80-e0cc-41f3-b821-e653a17b4632/alternates/FREE_320/a5f4fb80-e0cc-41f3-b821-e653a17b4632',
                 'https://www.99mac.se/static/artikel/bild/38356?l=eyJyZXNvdXJjZSI6Ilwvc3RhdGljXC9hcnRpa2VsXC9iaWxkXC8zODM1NiIsImZpbHRlcnMiOlsiYz0xNDEsNjAxLDIxNDAsMjM2OCIsInI9MCwwLDAsMSIsInQ9YXJ0aWNsZUZsb2F0Il0sInBhcmFtcyI6W10sImtleSI6ImJiYzFkMjJjZjk3ZTE0ODIxNjVhYTlhYTVkNjY0NmUzIn0%3D'];
 
-            let i = 0;
+            let i = 0; //variabel till räknaren
 
-            function changePicture()
+            function changePicture() //Byter bilden till nästa
             {
-                document.getElementById('slideshow').src = pictures[i++];
-                if(i >= pictures.length) i = 0;
+                document.getElementById('slideshow').src = pictures[i];  //tar en sträng ur en array och sätter bilden soruce till strängen i arrayn
+                i++; //plusar med i med 1
+                if(i >= pictures.length) i = 0; //startar om räknaren
             }
 
-            setInterval(changePicture, 5000);
-            changePicture();
+            setInterval(changePicture, 5000); //5 sekunder mellan varje bild
+            changePicture(); //sätter dit en bild när hemsidan laddas
 
-            </script>
+            </script> <!--avslutar script-->
         </main>
     </body>
 </html>
