@@ -35,6 +35,25 @@ body {
     text-decoration: none; /*Ta bort understräck*/
 }
 
+a:link
+{
+    color: white;
+}
+
+a:visited
+{
+    color: #FFF5C3;
+}
+
+a:hover
+{
+    color: #AAF5C3;
+}
+
+a:active
+{
+    color: #FFA5C3;
+}
 
 h1 { 
     text-align: center;
